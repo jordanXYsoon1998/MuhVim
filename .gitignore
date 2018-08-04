@@ -1,0 +1,10 @@
+# Temporary
+.netrwhist
+*~
+
+# Swaps
+*.swp
+*.swo
+
+plugged/
+pack/
