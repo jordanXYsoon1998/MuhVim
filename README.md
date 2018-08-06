@@ -7,7 +7,7 @@
     $ cd ~/.vim/pack/tpope/start
     $ git clone https://github.com/tpope/vim-vinegar.git
     ```
-3. Run this line to move fonts to user fonts folder
+3. Run this to move fonts to user fonts folder
 *   ```sh
     $ mkdir -p ~/.fonts
     $ cp ~/.vim/fonts/* ~/.fonts
