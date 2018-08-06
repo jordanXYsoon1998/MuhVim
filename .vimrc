@@ -8,6 +8,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
   " Both options are optional. You don't have to install fzf in ~/.fzf
   " and you don't have to run install script if you use fzf only in Vim.
+Plug 'itchyny/lightline.vim'
 
 call plug#end()
 
@@ -42,7 +43,7 @@ set wildmenu
 set wildmode=longest:list,full
 
 " Working with buffers
-nnoremap gb :ls<CR>:b<Space>
+nnoremap gb :ls<CR>:b<space>
 
 " NerdTree stuff
 nnoremap <leader>nt :NERDTreeToggle<Enter>
@@ -62,3 +63,9 @@ augroup END
 " Color and Theme
 let g:seoul256_background = 234
 colo seoul256
+
+" Status lines
+set laststatus=2
+let g:lightline = {
+    \ 'colorscheme': 'seoul256',
+    \ }
