@@ -27,6 +27,11 @@ autocmd Filetype html set softtabstop=2
 autocmd Filetype html set sw=2
 autocmd Filetype html set ts=2
 
+" 256 colors
+if $TERM == "xterm-256color" || $TERM == "screen-256color" || $COLORTERM == "gnome-terminal"
+  set t_Co=256
+endif
+
 " Change space to leader
 nnoremap <space> <Nop>
 let mapleader= " "
