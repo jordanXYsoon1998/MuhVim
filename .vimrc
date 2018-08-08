@@ -32,6 +32,8 @@ if $TERM == "xterm-256color" || $TERM == "screen-256color" || $COLORTERM == "gno
   set t_Co=256
 endif
 
+" KEYBINDING RELATED
+
 " Change space to leader
 nnoremap <space> <Nop>
 let mapleader= " "
@@ -44,9 +46,10 @@ nnoremap <leader>j <C-w>j
 nnoremap <leader>k <C-w>k
 nnoremap <leader>l <C-w>l
 
-" Wildmenus
-set wildmenu
-set wildmode=longest:list,full
+" Working with Ruby methods
+nmap W ]m
+nmap B [m
+nmap E ]M
 
 " Working with buffers
 nnoremap gb :ls<CR>:b<space>
@@ -56,6 +59,10 @@ nnoremap <leader>nt :NERDTreeToggle<Enter>
 
 " FZF Key
 nnoremap <leader>f :FZF<Enter>
+
+" Wildmenus
+set wildmenu
+set wildmode=longest:list,full
 
 " Line numbers
 set number relativenumber
