@@ -19,6 +19,8 @@ set ts=4
 autocmd Filetype ruby,eruby set softtabstop=2
 autocmd Filetype ruby,eruby set sw=2
 autocmd Filetype ruby,eruby set ts=2
+" Yaml files
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 " For Ruby Autocomplete
 autocmd Filetype ruby,eruby let g:rubycomplete_buffer_loading = 1
 autocmd Filetype ruby,eruby let g:rubycomplete_classes_in_global = 1
