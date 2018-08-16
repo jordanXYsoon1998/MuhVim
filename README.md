@@ -12,3 +12,5 @@
     $ mkdir -p ~/.fonts
     $ cp ~/.vim/fonts/* ~/.fonts
     ```
+4. *NOTE:* We can activate vi mode in bash
+*   put "set -o vi" in .bashrc file
