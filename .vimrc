@@ -47,6 +47,14 @@ nnoremap <leader>h <C-w>h
 nnoremap <leader>j <C-w>j
 nnoremap <leader>k <C-w>k
 nnoremap <leader>l <C-w>l
+nnoremap <Up> <C-w>+
+nnoremap <Down> <C-w>-
+nnoremap <Left> <C-w><
+nnoremap <Right> <C-w>>
+
+" Defines default behavior for where splits go to
+set splitbelow
+set splitright
 
 " Working with Ruby methods
 nmap W ]m
