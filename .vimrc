@@ -1,6 +1,7 @@
 set nocompatible
 call plug#begin('~/.vim/plugged')
 
+Plug 'tpope/vim-surround'
 Plug 'ervandew/supertab'
 Plug 'junegunn/seoul256.vim'
 Plug 'scrooloose/nerdtree'
