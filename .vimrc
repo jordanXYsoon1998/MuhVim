@@ -2,6 +2,7 @@ set nocompatible
 call plug#begin('~/.vim/plugged')
 
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-rails'
 Plug 'ervandew/supertab'
 Plug 'junegunn/seoul256.vim'
 Plug 'scrooloose/nerdtree'
@@ -35,6 +36,9 @@ set incsearch
 set hlsearch " Highlights any search matches
 
 " KEYBINDING RELATED
+
+" Set Paste Toggle
+set pastetoggle=<F3>
 
 " Change space to leader
 nnoremap <space> <Nop>
