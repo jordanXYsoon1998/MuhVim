@@ -87,6 +87,9 @@ augroup numbertoggle
     autocmd BufLeave,FocusLost,InsertEnter * set norelativenumber
 augroup END
 
+" Copying curr file into buffer
+nnoremap <leader>cp :!xclip -sel clip -i %<Enter>
+
 " THEME / COLOR RELATED
 
 " 256 colors
