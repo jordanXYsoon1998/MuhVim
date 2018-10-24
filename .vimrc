@@ -61,12 +61,16 @@ set splitbelow
 set splitright
 
 " Working with Ruby methods
-nmap W ]m
-nmap B [m
-nmap E ]M
+" nmap W ]m
+" nmap B [m
+" nmap E ]M
 
 " Working with buffers
 nnoremap gb :ls<CR>:b<space>
+
+" Working with diffs
+nnoremap <leader>df :windo diffthis<Enter>
+nnoremap <leader>dF :windo diffoff<Enter>
 
 " NerdTree stuff
 nnoremap <leader>nt :NERDTreeToggle<Enter>
@@ -132,3 +136,6 @@ let g:fzf_colors =
             \ 'marker':  ['fg', 'Keyword'],
             \ 'spinner': ['fg', 'Label'],
             \ 'header':  ['fg', 'Comment'] }
+
+" Visual aid for 80 characters
+set colorcolumn=80
