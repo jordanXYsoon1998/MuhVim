@@ -74,6 +74,8 @@ nnoremap <leader>dF :windo diffoff<Enter>
 
 " NerdTree stuff
 nnoremap <leader>nt :NERDTreeToggle<Enter>
+" Fix first character removed error in lnxsrv since Vim 7.4
+let NERDTreeNodeDelimiter = "\t"
 
 " FZF Key
 nnoremap <leader>f :FZF<Enter>
