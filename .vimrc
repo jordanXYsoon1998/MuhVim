@@ -15,6 +15,7 @@ Plug 'mattn/emmet-vim'
 
 call plug#end()
 
+set autoindent
 set expandtab
 set sw=4
 set ts=4
