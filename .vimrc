@@ -13,6 +13,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 " and you don't have to run install script if you use fzf only in Vim.
 Plug 'itchyny/lightline.vim'
 Plug 'mattn/emmet-vim'
+Plug 'martinda/Jenkinsfile-vim-syntax'
 
 call plug#end()
 
