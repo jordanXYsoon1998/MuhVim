@@ -145,5 +145,3 @@ let g:fzf_colors =
 
 " Visual aid for 80 characters
 set colorcolumn=80
-" Groovy syntax highlighting for Jenkinsfile
-au BufNewFile,BufRead *Jenkinsfile setf groovy
