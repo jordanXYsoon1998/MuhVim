@@ -4,6 +4,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-rails'
 Plug 'ervandew/supertab'
+Plug 'morhetz/gruvbox'
 Plug 'junegunn/seoul256.vim'
 Plug 'scrooloose/nerdtree'
 " PlugInstall and PlugUpdate will clone fzf in ~/.fzf and run install script
@@ -12,9 +13,11 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 " and you don't have to run install script if you use fzf only in Vim.
 Plug 'itchyny/lightline.vim'
 Plug 'mattn/emmet-vim'
+Plug 'martinda/Jenkinsfile-vim-syntax'
 
 call plug#end()
 
+set autoindent
 set expandtab
 set sw=4
 set ts=4
@@ -104,13 +107,14 @@ if $TERM == "xterm-256color" || $TERM == "screen-256color" || $COLORTERM == "gno
 endif
 
 " Color and Theme
-let g:seoul256_background = 234
-colo seoul256
+"let g:seoul256_background = 234
+set bg=dark
+colo gruvbox
 
 " Status lines
 set laststatus=2
 let g:lightline = {
-            \ 'colorscheme': 'seoul256',
+            \ 'colorscheme': 'gruvbox',
             \ }
 
 " FZF Related Stuff
