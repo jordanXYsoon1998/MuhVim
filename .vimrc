@@ -18,9 +18,9 @@ call plug#end()
 set expandtab
 set sw=4
 set ts=4
-autocmd FileType ruby,eruby set softtabstop=2
-autocmd FileType ruby,eruby set sw=2
-autocmd FileType ruby,eruby set ts=2
+autocmd FileType lisp,ruby,eruby set softtabstop=2
+autocmd FileType lisp,ruby,eruby set sw=2
+autocmd FileType lisp,ruby,eruby set ts=2
 " Yaml files
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 " For Ruby Autocomplete
