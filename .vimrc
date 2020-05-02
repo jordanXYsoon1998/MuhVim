@@ -34,6 +34,8 @@ autocmd FileType html,jsp,javascript set softtabstop=2
 autocmd FileType html,jsp,javascript set sw=2
 autocmd FileType html,jsp,javascript set ts=2
 
+au BufNewFile,BufRead *.ejs set filetype=html
+
 " SEARCH RELATED
 set incsearch
 set hlsearch " Highlights any search matches
