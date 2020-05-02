@@ -30,9 +30,9 @@ autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
 autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
 autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
-autocmd FileType html,jsp set softtabstop=2
-autocmd FileType html,jsp set sw=2
-autocmd FileType html,jsp set ts=2
+autocmd FileType html,jsp,javascript set softtabstop=2
+autocmd FileType html,jsp,javascript set sw=2
+autocmd FileType html,jsp,javascript set ts=2
 
 " SEARCH RELATED
 set incsearch
