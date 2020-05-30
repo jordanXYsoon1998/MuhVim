@@ -32,9 +32,9 @@ autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
 autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
 autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
-autocmd FileType html,jsp,javascript,typescript set softtabstop=2
-autocmd FileType html,jsp,javascript,typescript set sw=2
-autocmd FileType html,jsp,javascript,typescript set ts=2
+autocmd FileType html,jsp,javascript,typescript,css set softtabstop=2
+autocmd FileType html,jsp,javascript,typescript,css set sw=2
+autocmd FileType html,jsp,javascript,typescript,css set ts=2
 autocmd FileType html,javascript,css,typescript set omnifunc=syntaxcomplete#Complete
 
 au BufNewFile,BufRead *.ejs set filetype=html
