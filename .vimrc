@@ -15,6 +15,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'mattn/emmet-vim'
 Plug 'martinda/Jenkinsfile-vim-syntax'
 Plug 'leafgarland/typescript-vim'
+Plug 'skammer/vim-css-color'
 
 call plug#end()
 
@@ -34,6 +35,7 @@ autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
 autocmd FileType html,jsp,javascript,typescript set softtabstop=2
 autocmd FileType html,jsp,javascript,typescript set sw=2
 autocmd FileType html,jsp,javascript,typescript set ts=2
+autocmd FileType html,javascript,css,typescript set omnifunc=syntaxcomplete#Complete
 
 au BufNewFile,BufRead *.ejs set filetype=html
 
