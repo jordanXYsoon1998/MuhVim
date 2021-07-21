@@ -1,8 +1,18 @@
+" Include the system settings
+:if filereadable( "/etc/vimrc" )
+   source /etc/vimrc
+:endif
+
+" Include Arista-specific settings
+:if filereadable( $VIM . "/vimfiles/arista.vim" )
+   source $VIM/vimfiles/arista.vim
+:endif
+
+" Put your own customizations below
 set nocompatible
 call plug#begin('~/.vim/plugged')
 
 Plug 'tpope/vim-surround'
-Plug 'tpope/vim-rails'
 Plug 'ervandew/supertab'
 Plug 'morhetz/gruvbox'
 Plug 'junegunn/seoul256.vim'
@@ -13,29 +23,13 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 " and you don't have to run install script if you use fzf only in Vim.
 Plug 'itchyny/lightline.vim'
 Plug 'mattn/emmet-vim'
-Plug 'martinda/Jenkinsfile-vim-syntax'
-Plug 'leafgarland/typescript-vim'
 
 call plug#end()
 
 set autoindent
 set expandtab
-set sw=4
-set ts=4
-autocmd FileType ocaml,lisp,ruby,eruby set softtabstop=2
-autocmd FileType ocaml,lisp,ruby,eruby set sw=2
-autocmd FileType ocaml,lisp,ruby,eruby set ts=2
-" Yaml files
-autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
-" For Ruby Autocomplete
-autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
-autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
-autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
-autocmd FileType html,jsp,javascript,typescript,css set softtabstop=2
-autocmd FileType html,jsp,javascript,typescript,css set sw=2
-autocmd FileType html,jsp,javascript,typescript,css set ts=2
-
-au BufNewFile,BufRead *.ejs set filetype=html
+set sw=3
+set ts=3
 
 " SEARCH RELATED
 set incsearch
@@ -65,11 +59,6 @@ nnoremap <Right> <C-w>>
 " Defines default behavior for where splits go to
 set splitbelow
 set splitright
-
-" Working with Ruby methods
-" nmap W ]m
-" nmap B [m
-" nmap E ]M
 
 " Working with buffers
 nnoremap gb :ls<CR>:b<space>
