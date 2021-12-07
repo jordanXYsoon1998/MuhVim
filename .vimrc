@@ -31,9 +31,14 @@ set expandtab
 set sw=3
 set ts=3
 
+" Sets python code folding
+autocmd FileType python setlocal foldmethod=indent
+
 " SEARCH RELATED
 set incsearch
 set hlsearch " Highlights any search matches
+" :grep now doesn't leave vim and also doesn't open the first file match
+command! -nargs=+ Grep execute 'silent grep! <args>' | copen
 
 " KEYBINDING RELATED
 
@@ -62,6 +67,14 @@ set splitright
 
 " Working with buffers
 nnoremap gb :ls<CR>:b<space>
+
+" Working with GREP RESULTS
+" Show the quickfix window
+nnoremap <leader>co :copen<CR>
+nnoremap <leader>cc :cclose<CR>
+" Navigating through the results
+nnoremap [q :cprev<CR>
+nnoremap ]q :cnext<CR>
 
 " Working with diffs
 nnoremap <leader>df :windo diffthis<Enter>

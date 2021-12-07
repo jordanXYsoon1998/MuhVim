@@ -6,5 +6,8 @@
 *.swp
 *.swo
 
+# Session files
+*.vim
+
 plugged/
 pack/
