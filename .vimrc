@@ -6,6 +6,13 @@
 " Include Arista-specific settings
 :if filereadable( $VIM . "/vimfiles/arista.vim" )
    source $VIM/vimfiles/arista.vim
+   let mapleader = ","
+   let LID_File="/src/ID"
+   map <leader>ag :AGid -p .<CR><CR> "
+   map <leader>agd :AGid -D <CR><CR> "
+   map <leader>aga :AGid<CR><CR> "
+   map <leader>agt :AGid -t 'c t'<CR><CR> "
+   map <leader>agp :AGid -t 'p'<CR><CR> "
 :endif
 
 " Put your own customizations below
@@ -23,6 +30,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 " and you don't have to run install script if you use fzf only in Vim.
 Plug 'itchyny/lightline.vim'
 Plug 'mattn/emmet-vim'
+Plug 'gcmt/taboo.vim'
 
 call plug#end()
 
@@ -32,13 +40,13 @@ set sw=3
 set ts=3
 
 " Sets python code folding
-autocmd FileType python setlocal foldmethod=indent
+" autocmd FileType python setlocal foldmethod=indent
 
 " SEARCH RELATED
 set incsearch
 set hlsearch " Highlights any search matches
 " :grep now doesn't leave vim and also doesn't open the first file match
-command! -nargs=+ Grep execute 'silent grep! <args>' | copen
+command! -nargs=+ Grep execute 'silent grep! <args>' | redraw! | copen
 
 " KEYBINDING RELATED
 
